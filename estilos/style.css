@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Silkscreen&display=swap');
+
+:root{
+    --preto: #22181C;
+    --verde: #004F2D;
+    --bone: #D1D3C4;
+    --platinum: #DFE0DC;
+
+    --font-screen:'Silkscreen', cursive;
+    --font-keys: 'Roboto Mono', monospace;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background-color: var(--verde);
+    font-family: var(--font-keys);
+}
+
+body > h1{
+    background-color: var(--preto);
+    padding: 20px;
+    box-shadow: 0px 15px 3px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.305);
+    color: var(--platinum);
+}
+
+main{
+    width: 400px;
+    margin: 50px auto;
+    padding: 10px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    background-color: var(--bone);
+}
+
+main > div#screen > input#text{
+    font-family: var(--font-screen);
+    font-size: 1.3em;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    background: var(--preto);
+    width: 100%;
+    height: 40px;
+    color: var(--platinum);
+}
+
+main > div#keys{
+    display: grid;
+    grid-template-columns: 5;
+    grid-template-rows: 5;
+    gap: 15px;
+    margin: 10px;
+}
+
+main > div#keys > button{
+    font-weight: bold;
+    padding: 2px;
+    border: inset rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+}
+
+main > div#keys > button:hover{
+    background-color: var(--verde);
+    color: var(--platinum);
+    cursor: pointer;
+}
+
+main > div#keys > button:active{
+    background-color: var(--preto);
+    transform: scale(0.95);
+}
+
+main > div#keys > button#zero{
+    grid-column: 1;
+    grid-row: 5;
+}
+
+main > div#keys > button#one{
+    grid-column: 1;
+    grid-row: 4;
+}
+
+main > div#keys > button#two{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+main > div#keys > button#three{
+    grid-column: 3;
+    grid-row: 4;
+}
+
+main > div#keys > button#four{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+main > div#keys > button#five{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+main > div#keys > button#six{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+main > div#keys > button#seven{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+main > div#keys > button#eight{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+main > div#keys > button#nine{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+main > div#keys > button#clearAll{
+    grid-column: 5;
+    grid-row: 1 / span 4;
+}
+
+main > div#keys > button#backwards{
+    grid-column: 2;
+    grid-row: 5;
+}
+
+main > div#keys > button#calc{
+    grid-column: 5;
+    grid-row: 5;
+}
+
+main > div#keys > button#isum{
+    grid-column: 1 / span 4;
+    grid-row: 1;
+}
+
+main > div#keys > button#iminus{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+main > div#keys > button#divided{
+    grid-column: 4;
+    grid-row: 3;
+}
+
+main > div#keys > button#multiply{
+    grid-column: 4;
+    grid-row: 4;
+}
+
+main > div#keys > button#percent{
+    grid-column: 4;
+    grid-row: 5;
+}
